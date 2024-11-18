@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Mantap</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="bg-red-500 shadow overflow-x-hidden bg-white/30 backdrop-blur-md transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex flex-col justify-center items-center w-1/6 ">
+                <img src="asset/img/logo.png" class="w1/2 md:w-1/3" alt="">
+                <h1 class="text-lg md:text-2xl font-bold text-gray-800 text-red-500"
+                    style=" -webkit-text-stroke: 1px white; ">Bakso Mantap</h1>
+            </div>
+
+            <button id="burger-menu" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <div class="hidden md:flex md:flex-col space-y-4">
+                <a href="#products"
+                    class="border border-white text-center text-white px-6 py-2 rounded-lg hover:bg-white hover:text-red-500 transition duration-200">Pesan
+                    Sekarang</a>
+                <a href="/" class=" px-6 py-2 rounded-lg text-white transition duration-200">
+                    <i class="fa-brands fa-whatsapp"></i> +62
+                    1234-1234-123</a>
+            </div>
+        </div>
+
+        <!-- Mobile Call-to-Action Buttons -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 py-4 px-6">
+            <a href="#products"
+                class="block bg-red-500 text-white px-6 py-3 rounded-lg text-center mb-4 hover:bg-red-600 transition duration-200">Pesan
+                Sekarang</a>
+            <a href="#contact"
+                class="block border border-red-500 text-red-500 px-6 py-3 rounded-lg text-center hover:bg-red-500 hover:text-white transition duration-200">Hubungi
+                Kami</a>
+        </div>
+    </header>
+
+
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-50 gap-5">
+        <ul class="space-y-4 py-4 px-6">
+            <li><a href="#home" class="block text-gray-600 hover:text-red-500">Home</a></li>
+            <li><a href="#about" class="block text-gray-600 hover:text-red-500">About</a></li>
+            <li><a href="#products" class="block text-gray-600 hover:text-red-500">Products</a></li>
+            <li><a href="#contact" class="block text-gray-600 hover:text-red-500">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center text-white overflow-x-hidden"
+        style="background-image: url(asset/img/bg.jpg) ;">
+        <div class="absolute inset-0 bg-black bg-opacity-50 "></div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center py-10 px-6 rounded-lg">
+
+            <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-5xl font-bold">Rasakan Nikmatnya Bakso Mantap!</h2>
+                <p class="mt-4 text-lg">Bakso lezat, kenyal, dan penuh rasa. Cocok untuk semua suasana.</p>
+                <a href="#products"
+                    class="mt-6 inline-block bg-white text-red-500 px-6 py-3 rounded-lg font-bold hover:bg-red-500 hover:text-white">Pesan
+                    Sekarang</a>
+            </div>
+
+            <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left" data-aos-duration="1000">
+                <img src="asset/img/baso.jpg" alt="Mangkok Bakso" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 overflow-x-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <img src="asset/img/bakso 2.jpg" alt="Bakso" class="w-full md:w-1/2 rounded-lg shadow-lg"
+                data-aos="fade-right">
+            <div class="md:w-1/2" data-aos="fade-left">
+                <h3 class="text-3xl font-bold text-gray-800">Kenapa Memilih Kami?</h3>
+                <p class="mt-4 text-gray-600">Kami menggunakan bahan-bahan segar dan pilihan terbaik untuk menghasilkan
+                    bakso yang sempurna. Dengan rasa yang khas dan tekstur kenyal, Bakso Mantap selalu jadi pilihan
+                    favorit pelanggan.</p>
+                <ul class="mt-6 space-y-3">
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Terbuat dari bahan segar
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Diproses secara higienis
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Harga terjangkau
+                    </li>
+                </ul>
+                <div class="w-full flex justify-center">
+                    <button
+                        class="bg-red-500 text-xl text-white font-bold px-6 py-4 mt-10 rounded-2xl hover:bg-red-800">Ayo
+                        Beli
+                        Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800" data-aos="fade-up">Layanan Kami</h2>
+            <p class="mt-4 text-gray-600" data-aos="fade-up">Kami menawarkan berbagai layanan terbaik untuk memanjakan
+                Anda. Layanan kami
+                dirancang untuk memberikan kenyamanan dan kualitas terbaik.</p>
+
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12" data-aos="fade-up"
+                data-aos-duration="1000">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-4xl text-red-500 mb-4">
+                        <i class="fas fa-bowl-rice"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Layanan Pengantaran</h3>
+                    <p class="text-gray-600 mt-2">Nikmati bakso favorit Anda di rumah dengan layanan pengantaran cepat
+                        dan aman langsung ke pintu rumah Anda.</p>
+                    <a href="#order"
+                        class="mt-4 inline-block bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition duration-300">Pesan
+                        Sekarang</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-4xl text-red-500 mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Dine-In Experience</h3>
+                    <p class="text-gray-600 mt-2">Rasakan kenyamanan makan di tempat kami dengan suasana yang nyaman dan
+                        layanan terbaik untuk Anda.</p>
+                    <a href="#menu"
+                        class="mt-4 inline-block bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition duration-300">Lihat
+                        Menu</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-4xl text-red-500 mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Catering & Event</h3>
+                    <p class="text-gray-600 mt-2">Kami juga menyediakan layanan catering untuk acara Anda. Bakso Mantap
+                        siap menemani berbagai acara penting Anda.</p>
+                    <a href="#contact"
+                        class="mt-4 inline-block bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition duration-300">Hubungi
+                        Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proses -->
+    <section id="process" class="py-20 overflow-x-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h3 class="text-3xl font-bold text-gray-800">Proses Pembuatan Bakso Kami</h3>
+                <p class="mt-4 text-gray-600">Di Bakso Mantap, kami hanya menggunakan bahan-bahan segar dan berkualitas.
+                    Setiap bakso dibuat dengan penuh perhatian, mulai dari pemilihan bahan hingga pengolahan yang
+                    higienis.</p>
+                <ul class="mt-6 space-y-3">
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Bahan baku berkualitas terbaik
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Proses pembuatan yang higienis
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="bg-red-500 text-white p-2 rounded-full mr-3">✔</span>
+                        Selalu segar dan siap dinikmati
+                    </li>
+                </ul>
+                <div class="w-full flex justify-center mt-8">
+                    <button class="bg-red-500 text-xl text-white font-bold px-6 py-4 rounded-2xl hover:bg-red-800">Coba
+                        Sekarang!</button>
+                </div>
+            </div>
+            <img src="asset/img/proses.jpg" alt="Proses Pembuatan Bakso" class="w-full md:w-1/2 rounded-lg shadow-lg"
+                data-aos="fade-left">
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="bg-gradient-to-b from-red-500 to-red-300" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="text-center py-10 text-3xl text-white font-bold">Produk Kita</h1>
+        <div class="carousel-container container mx-auto relative overflow-hidden">
+            <div class="carousel flex transition-transform duration-500 ease-in-out">
+                <!-- Card 1 -->
+                <div class="card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="asset/img/productbakso.jpg" alt="Card Image"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="p-4">
+                            <h3
+                                class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
+                                Bakso Tahu</h3>
+                            <p class="text-gray-600 mt-2">Bakso lembut dipadu dengan tahu yang gurih dan kenyal. Membuat
+                                lidah siapapun yang makan akan bergoyang</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="asset/img/productbakso2.jpg" alt="Card Image"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="p-4">
+                            <h3
+                                class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
+                                Bakso Beranak</h3>
+                            <p class="text-gray-600 mt-2">Bakso Besar yang lembut dengan daging asli, di dalamnya
+                                terdapat bakso kecil yang tidak kalah enaknya</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="asset/img/productbakso3.jpg" alt="Card Image"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="p-4">
+                            <h3
+                                class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
+                                Bakso Pedas</h3>
+                            <p class="text-gray-600 mt-2">Pedasnya sambal ditambah dengan nikmat kuah bakso dan bakso
+                                dengan daging kualitas pilihan, membuat siapapun ingin merasakannya</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="asset/img/tes.webp" alt="Card Image"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="p-4">
+                            <h3
+                                class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
+                                Bakso Cinta</h3>
+                            <p class="text-gray-600 mt-2">Lembutnya daging bakso dengan nikmatnya kuah bakso, membuat
+                                seperti siapa pun yang memakanya merasakan cinta yang sesungguhnya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+                class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full focus:outline-none hover:bg-gray-600 transition-colors duration-300"
+                id="prevBtn">‹</button>
+            <button
+                class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full focus:outline-none hover:bg-gray-600 transition-colors duration-300"
+                id="nextBtn">›</button>
+        </div>
+
+        <div class="w-full flex justify-center py-10">
+            <button
+                class="bg-white text-xl text-center text-red-500 font-bold px-6 py-4 mt-10 rounded-xl hover:bg-red-500 hover:text-white">Pesan
+                Sekarang</button>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Bakso Mantap. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
